@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+  }  
+
+  
+  :root {
+    --main-light: #A1E3D8;
+    --main-yellow: #F7FF93;
+    --main-light-blue: #069A8E;
+    --main-blue: #005555;
+  }
+  
+  body {
+    font-family: Roboto, "Sans serif";
+  }
+
+  /* Navigation styles */
+  #navbar {
+    position: fixed;
+    background-color: var(--main-blue);
+    height:60px;
+    width:100%;
+    z-index: 2;;
+  }
+  
+  #navbar, ul {
+    display: flex;
+    justify-content: flex-end ;
+    align-items: center;  
+    margin:0;
+  }
+  
+  #navbar > ul > li {
+    padding: 20px ;
+    list-style-type: none;
+    margin:0;
+  }
+
+  a {
+    /* font-size: 1rem; */
+    text-decoration: none;
+    color: var(--main-light) ;
+    text-align: center;
+  }
+  
+/* hover effect for navigation */
+  li:hover{
+    background-color: #069A8E;
+  }
+  
+  /* Main title and background overlay  */
+
+  h1 {
+    font-size: 6rem;
+  }
+  
+
+  #myheader {
+    background-color: rgba(0, 85, 85, .5);
+    padding: 20px;
+    border-radius: 20px;
+  }
+
+/* Hero image of the main page */
+
+  #welcome-section {
+    background-attachment: fixed;
+    background-image: url("https://images.unsplash.com/photo-1453928582365-b6ad33cbcf64?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=873&q=80");
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: #A1E3D8;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: auto;
+  }
+
+/* Porfolio grids with image */
+
+.project-grid{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+   grid-gap: 4rem;
+   width: 100%;
+   max-width: 1280px;
+   margin: 0 auto;
+   padding-bottom: 4rem;
+   padding-top: 4rem;
+ }
+
+.project-image {
+    height: 320px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.project-title {
+    font-size: 1.5rem;
+    padding: 1rem 0.5rem;
+}
+  
+
+/* Adding border curves and hover effect to images */
+img {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    display: block;
+    width: 100%;
+}
+
+.project {
+    border-radius: 25px;
+    background-color: #005555;
+    filter:brightness(80%);
+}
+
+.project:hover{
+    filter:none;
+  }
+  
+
+
+
+/* Contact section  */
+  #contact {
+    background-image: url("https://images.unsplash.com/photo-1604881988758-f76ad2f7aac1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;;
+    display:flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    align-items: center;
+    text-align: center;
+    padding:0 2rem;
+  }
+
+  .contact-title {
+    display:flex;
+    color: #A1E3D8; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    text-align: center;
+  }
+  
+  .chat {
+    color: var(--main-light);
+    display:block;
+    text-align: center;
+    font-size: 4rem;
+    text-shadow:5px 2px 1px #1f1f1f;
+    /* border-radius: 20px; */
+    padding-bottom:0;
+
+ }
+
+  .social-media {
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-top: 4rem;
+    max-width: 980px;
+    background-color: rgba(0, 85, 85, .5);
+    border-radius: 20px;
+  }
+
+  .social-media > a {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+
+  i {
+    padding-right: 10px;
+  }
+
+  .emailme, .facebook, .linkedin, .github {
+    color: var(--main-light);
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    text-shadow:2px 2px 1px #1f1f1f;
+    cursor: pointer;
+    margin-top: 0;
+  }
+  
+  .emailme:hover, .facebook:hover, .linkedin:hover, .github:hover {
+    transition: all 0.3s;
+    cursor: pointer;
+    transform: translateY(8px);
+    color: var(--main-yellow);
+  }
+  
+  footer {
+    display: flex;
+    justify-content: center;
+    background-color: var(--main-light);
+    width: auto;
+    height:auto;
+    padding:2rem;
+  }
+
+  footer > p {
+      color: var(--main-blue);
+  }
+  
+  @media screen and (max-width: 600px) {
+  
+    .social-media > a {
+        font-size: 1.2rem;
+        padding: .8rem;
+        }
+        
+    .chat {
+        display: block;
+        padding-bottom: 20px;
+        font-size: 3rem;
+        
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+  
+  }
