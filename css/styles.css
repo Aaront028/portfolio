@@ -30,20 +30,36 @@
     align-items: center;  
     margin:0;
   }
-  
+
   #navbar > ul > li {
     padding: 20px ;
     list-style-type: none;
     margin:0;
   }
-
+  
   a {
     /* font-size: 1rem; */
     text-decoration: none;
     color: var(--main-light) ;
     text-align: center;
   }
-  
+      
+  @media only screen and (max-width: 600px) {
+
+    #navbar {
+        font-size: 1.4rem;
+        height:100px;
+      }
+    #navbar > ul > li {
+        padding: 37px ;
+        list-style-type: none;
+        margin:0;
+    }
+    li:hover{
+        background-color: #069A8E;
+      }
+  }
+
 /* hover effect for navigation */
   li:hover{
     background-color: #069A8E;
@@ -76,14 +92,16 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
-    overflow: auto;
+    overflow: auto; 
+    width: auto;
   }
 
 /* Porfolio grids with image */
 
 .project-grid{
+  
    display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));   justify-content: center;
    grid-gap: 4rem;
    width: 100%;
    max-width: 1280px;
@@ -91,6 +109,17 @@
    padding-bottom: 4rem;
    padding-top: 4rem;
  }
+
+
+ /* 30.625em */
+ @media only screen and (max-width: 600px) {
+    .projects-section {
+      padding: 6rem 1rem;
+    }
+    .project-grid{
+        grid-template-columns: 384px;
+    }
+  }
 
 .project-image {
     height: 320px;
@@ -103,7 +132,6 @@
     padding: 1rem 0.5rem;
 }
   
-
 /* Adding border curves and hover effect to images */
 img {
     border-top-left-radius: 25px;
@@ -121,9 +149,6 @@ img {
 .project:hover{
     filter:none;
   }
-  
-
-
 
 /* Contact section  */
   #contact {
@@ -156,9 +181,7 @@ img {
     text-align: center;
     font-size: 4rem;
     text-shadow:5px 2px 1px #1f1f1f;
-    /* border-radius: 20px; */
     padding-bottom:0;
-
  }
 
   .social-media {
@@ -228,8 +251,15 @@ img {
         
     }
 
-    .project-grid {
-        grid-template-columns: 1fr;
+    #welcome-section {
+        height: 100vh;
+        overflow: none;
+      }
+    
+      
+  footer > p {
+    font-size: 1rem;
     }
+}
+
   
-  }
