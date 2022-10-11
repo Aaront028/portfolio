@@ -32,10 +32,11 @@
   }
 
   #navbar > ul > li {
-    padding: 20px ;
+    /* padding: 20px ; */
     list-style-type: none;
     margin:0;
   }
+  
   
   a {
     /* font-size: 1rem; */
@@ -44,8 +45,14 @@
     text-align: center;
   }
 
+  .nav-link {
+    padding: 20px ;
+    list-style-type: none;
+    margin:0;
+  }
+
 /* hover effect for navigation */
-  li:hover{
+ a:hover{
     background-color: #069A8E;
     cursor:pointer;
   }
