@@ -47,6 +47,7 @@
 /* hover effect for navigation */
   li:hover{
     background-color: #069A8E;
+    cursor:pointer;
   }
   
   /* Main title and background overlay  */
