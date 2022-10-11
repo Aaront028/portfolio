@@ -32,7 +32,7 @@
   }
 
   #navbar > ul > li {
-    /* padding: 20px ; */
+    padding: 20px ;
     list-style-type: none;
     margin:0;
   }
@@ -51,12 +51,18 @@
     margin:0;
   }
 
+  .nav-link:hover {
+    background-color: #069A8E;
+    cursor:pointer;
+  }
+
 /* hover effect for navigation */
- a:hover{
+  li:hover{
     background-color: #069A8E;
     cursor:pointer;
   }
   
+
   /* Main title and background overlay  */
 
   h1 {
