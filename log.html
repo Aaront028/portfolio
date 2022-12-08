@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /* Define the CSS styles for the coffee cup */
+      .coffee-cup {
+        /* Set the width and height of the coffee cup */
+        width: 150px;
+        height: 150px;
+
+        /* Set the background color of the coffee cup to brown */
+        background-color: brown;
+
+        /* Set the border radius to make the coffee cup look more rounded */
+        border-radius: 20px;
+
+        /* Add a drop shadow to give the coffee cup a more realistic appearance */
+        box-shadow: 3px 3px 5px black;
+      }
+
+      /* Define the CSS styles for the steam coming out of the coffee cup */
+      .steam {
+        /* Set the width and height of the steam */
+        width: 30px;
+        height: 60px;
+
+        /* Set the position of the steam to be absolutely positioned relative to the coffee cup */
+        position: absolute;
+        top: 60px;
+        left: 60px;
+
+        /* Set the background color of the steam to white */
+        background-color: white;
+
+        /* Set the border radius to make the steam look more rounded */
+        border-radius: 15px;
+
+        /* Add a drop shadow to give the steam a more realistic appearance */
+        box-shadow: 1px 1px 2px black;
+      }
+
+      /* Define the CSS styles for the coffee beans on top of the coffee cup */
+      .coffee-beans {
+        /* Set the width and height of the coffee beans */
+        width: 150px;
+        height: 150px;
+
+        /* Set the position of the coffee beans to be absolutely positioned relative to the coffee cup */
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        /* Set the background image of the coffee beans to a small image of coffee beans */
+        background-image: url(coffee-beans.png);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="coffee-cup">
+      <div class="steam"></div>
+    </div>
+    <div class="coffee-beans"></div>
+  </body>
+</html>
